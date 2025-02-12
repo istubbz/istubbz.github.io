@@ -1,75 +1,117 @@
+
+
+
 <!DOCTYPE html>
-<html>
-<title>Lucas Website</title>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
 <body>
 
-<p>&nbsp;<a id="Top"></a></p>
-<table style="height: 550px; margin-left: auto; margin-right: auto;" width="400" cellspacing="1" cellpadding="1"><caption>&nbsp;<img src="https://dl.dropboxusercontent.com/u/10704810/coffeeclub/cc.png" alt="Logo" width="440" height="247" /></caption>
-<tbody>
-<tr>
-<td><span style="color: #33cccc;"><a style="color: #33cccc;" title="rules" href="#Rules">Coffee club guidelines</a></span><br /><br /><br /></td>
-<td><span style="color: #33cccc; background-color: #ffffff;">Welcome to Coffee Club.<br />We will be drinking coffee brought in by our members then rating each blend for taste on the palate along with strength, giving it an overall score out of 5.<br /></span></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td style="text-align: left;">&nbsp;<span style="color: #33cccc;">Current Blend Description</span><br /><br />&nbsp;</td>
-<td><span style="color: #993300;">The Best<br />Roast &amp; Ground Sumatran<br />Sumatran, Full bodied with spiced citrus flavour.</span></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>
-<p><span style="color: #33cccc;">Click below for webcam to see if<br />the pot is&nbsp;ready<br /></span></p>
-<p><br /><video poster="https://dl.dropboxusercontent.com/u/10704810/coffeeclub/jug.gif" controls="controls" width="202" height="176">
-<source src=" http://ak9.picdn.net/shutterstock/videos/7993939/preview/stock-footage-coffee-making-timelapse-find-similar-in-our-portfolio.mp4" type="video/mp4" />
-<source src=" http://ak9.picdn.net/shutterstock/videos/7993939/preview/stock-footage-coffee-making-timelapse-find-similar-in-our-portfolio.mp4" type="video/mp4" /></video></p>
-</td>
-<td style="text-align: right;">
-<h3 style="text-align: left;">&nbsp;<br /><br /><img style="float: left;" src="https://dl.dropboxusercontent.com/u/10704810/coffeeclub/241016.JPG" alt="Current Coffee Blend" width="142" height="203" /><strong><span style="color: #993300;">Supplied by TP</span><br /></strong><strong><span style="color: #993300;">Reported Strength = 5</span></strong></h3>
-</td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-<table style="height: 205px; margin-left: auto; margin-right: auto;" width="529" cellspacing="1" cellpadding="1">
-<tbody>
-<tr>
-<td>
-<h3><span style="text-decoration: underline;"><span style="color: #33cccc; text-decoration: underline;">Guidelines for Coffee Club</span><br /><a id="Rules"></a><br /></span></h3>
-</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>
-<p>&nbsp;</p>
-<ol>
-<li><span style="color: #33cccc;">Dont talk about Coffee Club (obviously)</span></li>
-<li><span style="color: #33cccc;">Use the same measuring scoop &amp; quantity of 5 scoops for all coffee when made</span></li>
-<li><span style="color: #33cccc;">This is a private club so take it in turn to bring in some coffee</span></li>
-<li><span style="color: #33cccc;">We collectivly look after the coffee pot &amp; its state of cleanliness</span></li>
-<li><span style="color: #33cccc;">When a fresh brew has been made please message our members via the WhatsApp group</span></li>
-<li><span style="color: #33cccc;">Please supply a picture &amp; description for the website (via WhatsApp grp&nbsp;is best)</span></li>
-<li><span style="color: #33cccc;">Do not deviate from the path, dont mix instant with ground coffee</span></li>
-<li><span style="color: #33cccc;">Discard coffee from the pot after 2 hours, to prevent a bitter taste</span></li>  
-<li><span style="color: #33cccc;">Only coffee related chat on the WhatsApp group</span></li>
-<li><span style="color: #33cccc;">To join coffee club you need to bring in coffee in way of an application to join, you will then be added to the WhatsApp group</span></li>
-</ol>
-</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>
-<p>&nbsp;<img src="https://dl.dropboxusercontent.com/u/10704810/coffeeclub/logoScan.png" alt="QR Code" width="506" height="192" /><br /><a title="Home" href="#Top">Home<br /></a><span style="text-decoration: underline;"><span style="color: #0000ff; text-decoration: underline;">Contact is via closed WhatsApp group</span></span></p>
-<p>&nbsp;</p>
-</td>
-<td>&nbsp;</td>
-<td>&nbsp;<a id="End"></a><br /><br /></td>
-</tr>
-</tbody>
-</table>
-<p style="text-align: right;">&nbsp;<a title="Pi" href="https://html-online.com/editor/" target="_blank">&pi;</a></p>
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+<<!DOCTYPE html>
+<html>
+<head>
+  <title>Lucas Website</title>
+</head>
+<body>
+
  <a href="Lucas.zip">Click here for Arcade backup zip  file</a> 
+
+</body>
+</html>>
 </body>
 </html>
+
